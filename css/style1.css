@@ -1,0 +1,75 @@
+.box {
+    width: 1341px;
+    height: 568px;
+    background: greenyellow;
+}
+.head {
+
+    width: 978px;
+    height: 87px;
+    background: cornflowerblue;
+    margin: auto;
+}
+#left {
+    width: 299px;
+    height: 87px;
+    float: left;
+    background: brown;
+}
+#right {
+    width: 304px;
+    height: 87px;
+    float: right;
+    background: purple;
+}
+.clear {
+    clear: both;
+}
+.nav {
+    width: 978px;
+    height: 57px;
+    background: red;
+    margin: auto;
+}
+.main {
+    width: 978px;
+    height: 302px;
+    margin: auto;
+}
+.left {
+    width: 299px;
+    height: 302px;
+    background: cornflowerblue;
+    float: left;
+    margin-right: 41px;
+    /*margin: auto;*/
+}
+.center {
+    width: 299px;
+    height: 302px;
+    background: lightgoldenrodyellow;
+    float: left;
+    margin-right: 40px;
+    /*margin: auto;*/
+}
+.right {
+    width: 299px;
+    height: 302px;
+    background: peru;
+    float: left;
+    /*margin: auto;*/
+}
+.foot {
+    width: 978px;
+    height: 121px;
+    background: black;
+    margin: auto;
+}
+#text {
+    width: 30px;
+    height: 20px;
+}
+.nav li {
+    float: left;
+}
+
