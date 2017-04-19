@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/work7.css">
+</head>
+<body>
+<div id="box">
+    <div id="left">
+        <ul id="market">
+            <li>蔬菜</li>
+            <li>水果</li>
+            <li>家电</li>
+            <li>肉类</li>
+        </ul>
+    </div>
+    <div id="right">
+        <p id="p1"><img src="../imgs/8af8fcffcd1f594b59241d713f504d47.jpg"></p>
+        <p id="p2"><img src="../imgs/fruit.jpg"></p>
+        <p id="p3"><img src="../imgs/ele.jpg"></p>
+        <p id="p4"><img src="../imgs/meat.jpg"></p>
+    </div>
+</div>
+<script>
+    var lis = document.getElementById('market').getElementsByTagName('li'),
+        pictures = document.getElementById('right').getElementsByTagName('p');
+    for(var i = 0;i<lis.length;i++) {
+        lis[i].index = i;
+        lis[i].onclick = function () {
+            for(var j = 0;j<pictures.length;j++) {
+                pictures[j].style.display = 'none';
+                lis[j].style.background = '';
+            }
+            pictures[this.index].style.display = 'block';
+            lis[this.index].style.background = 'red';
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        #box {
+            width: 300px;
+            height: 500px;
+            margin: 20px auto;
+            /*background: red;*/
+        }
+        #con {
+            height: 300px;
+            width: 500px;
+            margin-left: 10px;
+        }
+        #box button {
+            margin-left: 10px;
+            height: 50px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <div id="con"></div>
+    <button id="btn1">开始</button>
+    <button id="btn2">暂停</button>
+</div>
+<script>
+//    var arr = ['胡歌','王凯','古越涛','邓超','孙俪'];
+    var arr = ['<img src="../imgs/76b74cff50700fe2.jpg">',
+        '<img src="../imgs/6957262d77a9c69f.jpg">','<img src="../imgs/1424441841031.jpeg">','<img src="../imgs/P50920-123241.jpg">',
+    '<img src="../imgs/P60228-193917.jpg">','<img src="../imgs/P60316-144558.jpg">','<img src="../imgs/P60606-202341.jpg">']
+    var con = document.getElementById('con'),
+         btn1 = document.getElementById('btn1'),
+         btn2 = document.getElementById('btn2');
+    var i = 0;
+    function aa() {
+        con.innerHTML = arr[i];
+        i++;
+        if(i>arr.length-1) {
+            i=0;
+        }
+    }
+    btn1.onclick = function () {
+        s1 = setInterval(aa,1000);
+    };
+    btn2.onclick = function () {
+        clearInterval(s1);
+    };
+//    for(var i=0;i<arr.length;i++) {
+//        console.log(arr[i])
+//    }
+//    setInterval 定时器 clearInterval 清除定时器
+</script>
+</body>
+</html>

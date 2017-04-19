@@ -1,0 +1,17 @@
+* {
+    margin: 0; padding: 0; list-style: none;
+}
+#box {
+    width: 1000px; height: 600px;
+}
+#left {
+    margin:50px 20px; height: 500px; width: 200px; float: left;
+}
+#market li {
+    height: 125px;
+    text-align: center;
+    line-height: 125px;
+}
+#right {
+    height: 500px; width: 300px; float: right; margin:50px 20px; overflow: hidden;
+}
