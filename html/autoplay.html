@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/autoplay.css">
+</head>
+<body>
+<div id="box">
+    <ul id="imgs">
+        <li><img src="../imgs/P50920-123241.jpg" width="450px" height="600px"/></li>
+        <li><img src="../imgs/P51119-152235.jpg" width="450px" height="600px"/></li>
+        <li><img src="../imgs/P60228-193917.jpg" width="450px" height="600px"/></li>
+        <li><img src="../imgs/P60316-144558.jpg" width="450px" height="600px"/></li>
+        <li><img src="../imgs/P60606-202341.jpg" width="450px" height="600px"/></li>
+    </ul>
+    <ol id="num">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ol>
+</div>
+<script>
+    var imgs = document.getElementById('imgs').getElementsByTagName('li'),
+        nums = document.getElementById('num').getElementsByTagName('li');
+    var k = 0;
+    function auto() {
+        for(var i = 0;i<nums.length;i++) {
+            imgs[i].style.display = 'none';
+            nums[i].style.background = '';
+        }
+        imgs[k].style.display = 'block';
+        nums[k].style.background = 'red';
+        k++;
+        if(k>nums.length-1) {
+            k = 0;
+        }
+    }
+    s1 = setInterval(auto,1000);
+    for(var i = 0;i < nums.length;i++) {
+        nums[i].index = i;
+        nums[i].onmouseover =  function () {
+            for(var j = 0;j < imgs.length;j++) {
+                imgs[j].style.display = 'none';
+                nums[j].style.background = 'none';
+            }
+            imgs[this.index].style.display = 'block';
+            nums[this.index].style.background = 'red';
+            clearInterval(s1);
+        };
+        nums[i].onmouseout = function () {
+            k = this.index;
+            s1 = setInterval(auto, 1000);        }
+    }
+</script>
+</body>
+</html>
+<!--onmouseover 鼠标滑过 onmouseout鼠标离开-->

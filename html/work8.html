@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/css8.css">
+</head>
+<body>
+<div id="box">
+    <ul id="imgs">
+        <li><img src="../imgs/P50920-123241.jpg" width="450px" height="700px"/><p>春风又绿江南岸</p></li>
+        <li><img src="../imgs/P51119-152235.jpg" width="450px" height="700px"/><p>春风又绿江南岸</p></li>
+        <li><img src="../imgs/P60228-193917.jpg" width="450px" height="700px"/><p>春风又绿江南岸</p></li>
+        <li><img src="../imgs/P60316-144558.jpg" width="450px" height="700px"/><p>春风又绿江南岸</p></li>
+        <li><img src="../imgs/P60606-202341.jpg" width="450px" height="700px"/><p>春风又绿江南岸</p></li>
+    </ul>
+</div>
+<script>
+    var lis = document.getElementById('imgs').getElementsByTagName('li');
+    for (var i = 0;i<lis.length;i++) {
+        lis[i].onmouseover = function () {
+            this.style.border = '2px solid red';
+            this.getElementsByTagName('p')[0].style.display = 'block';
+        };
+        lis[i].onmouseout = function () {
+            this.style.border = '2px solid #ccc';
+            this.getElementsByTagName('p')[0].style.display = 'none';
+        };
+    }
+</script>
+</body>
+</html>

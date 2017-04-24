@@ -1,0 +1,20 @@
+* {
+    margin: 0; padding: 0;
+    list-style: none;
+}
+#box {
+    margin: 20px auto;
+    overflow: hidden;
+}
+#con {
+    width: 2500px;
+}
+#con li {
+    /*width: 500px; height: 650px;*/
+    width: auto;height: auto;
+    float: left;
+    margin: 0;
+}
+#start,#stop {
+    margin-left: 50px;
+}

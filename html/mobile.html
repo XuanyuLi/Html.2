@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/mobile.css">
+</head>
+<body>
+<div id="box">
+    <p><img src="../imgs/toptitle.png" alt=""></p>
+    <h3>春江花月夜<img src="../imgs/tea1.jpg"></h3>
+    <dl style="display: block">
+        <dt><img src="../imgs/shouji_buttom1.jpg" alt=""></dt>
+        <dd>
+            <p>价格：<span>￥4566</span></p>
+            <p>春江花招秋月夜，张若虚</p>
+        </dd>
+    </dl>
+
+    <h3>春江花月夜<img src="../imgs/tea2.jpg"></h3>
+    <dl>
+        <dt><img src="../imgs/shouji_buttom2.jpg" alt=""></dt>
+        <dd>
+            <p>价格：<span>￥4566</span></p>
+            <p>春江花招秋月夜，张若虚</p>
+        </dd>
+    </dl>
+
+    <h3>春江花月夜<img src="../imgs/tea3.jpg"></h3>
+    <dl>
+        <dt><img src="../imgs/shouji_buttom3.jpg" alt=""></dt>
+        <dd>
+            <p>价格：<span>￥4566</span></p>
+            <p>春江花招秋月夜，张若虚</p>
+        </dd>
+    </dl>
+
+    <h3>春江花月夜<img src="../imgs/tea4.jpg"></h3>
+    <dl>
+        <dt><img src="../imgs/shouji_buttom4.jpg" alt=""></dt>
+        <dd>
+            <p>价格：<span>￥4566</span></p>
+            <p>春江花招秋月夜，张若虚</p>
+        </dd>
+    </dl>
+
+    <h3>春江花月夜<img src="../imgs/tea5.jpg"></h3>
+    <dl>
+        <dt><img src="../imgs/shouji_buttom5.jpg" alt=""></dt>
+        <dd>
+            <p>价格：<span>￥4566</span></p>
+            <p>春江花招秋月夜，张若虚</p>
+        </dd>
+    </dl>
+</div>
+<script src="../jquery/jquery-1.7.2.js"></script>
+<script>
+    $('h3').click(function () {
+        $('h3').next().hide();
+        $(this).next().show('height:146px');
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/roll.css">
+</head>
+<body>
+<div id="box">
+    <ul id="con">
+        <li ><img src="../imgs/76b74cff50700fe2.jpg" width="400px" height="650px"/></li>
+        <li ><img src="../imgs/6957262d77a9c69f.jpg" width="400px" height="650px"/></li>
+        <li><img src="../imgs/1424441841031.jpeg" width="400px" height="650px"/></li>
+        <li><img src="../imgs/P50920-123241.jpg" width="400px" height="650px"/></li>
+        <li><img src="../imgs/P60228-193917.jpg" width="400px" height="650px"/></li>
+    </ul>
+</div>
+<button id="start">开始</button>
+<button id="stop">暂停</button>
+<script>
+    var con = document.getElementById('con'),
+        start = document.getElementById('start'),
+        stop = document.getElementById('stop');
+    start.onclick = function() {
+        s1 = setInterval(auto,10);
+//        start.disabled = 'disabled';
+    };
+    stop.onclick = function () {
+        clearInterval(s1);
+//        stop.disabled = '';
+    };
+    function auto() {
+        //获取ul的marginLeft
+        var left = parseInt(con.style.marginLeft);
+        if (!left) {
+            left = 0;
+        }
+        if(left < 1600) {
+            con.style.marginLeft = left + 1 + 'px';
+        }else {
+            con.style.marginLeft = 0;
+        }
+    }
+//    setInterval(auto,10);
+</script>
+</body>
+</html>
+<!--parseInt 类型转换-->
