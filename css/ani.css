@@ -1,0 +1,9 @@
+.box {
+    width: 100px;
+    height:100px;
+    background: red;
+    margin: 40px auto;
+}
+.box1 {
+    width: 100px; height: 100px; background: blue; margin: 40px ;
+}
