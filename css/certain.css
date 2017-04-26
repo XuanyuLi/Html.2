@@ -1,0 +1,38 @@
+* {
+    margin: 0;padding: 0;
+    list-style:none;
+}
+#radioBox {
+    width: 153px;
+    height:27px;margin: 20px auto;background: #f5f5f5;
+}
+#radioBox input {
+    visibility: hidden;
+    position: absolute;
+    /*opacity: 0;*/
+}
+#radioBox label {
+    width: 77px; height: 27px;display: block;background: red;border-radius: 15px;
+    background: url("../imgs/QQ图片20170426141738.png");
+    -webkit-transition: all 0.5s;
+}
+#radioBox input:checked+label {
+    background-position: -51px 0;
+}
+
+#radioBox1 {
+    width: 202px; height: 120px; margin: 300px auto; background: #f5f5f5;
+}
+#radioBox1 input {
+    visibility: hidden; position: absolute;
+}
+#radioBox1 label {
+    width: 202px;
+    height: 120px;
+    display: block;
+    background:red; border-radius: 20px; background: url("../imgs/QQ图片20170426143421.png"); -webkit-transition: all 0.5s;
+}
+#radioBox1 input:checked+label {
+    background: url("../imgs/QQ图片20170426143441.png");
+
+}
