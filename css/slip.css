@@ -1,0 +1,50 @@
+* {
+    margin: 0; padding: 0; list-style: none;
+}
+#box {
+    width: 100px; height: 100px; margin-top: 50px; background: blue;
+    -webkit-animation: mycss 3s linear 1s infinite ;
+}
+@-webkit-keyframes mycss {
+    0%{
+        -webkit-transform: translateX(0);
+    }
+    25%{
+        -webkit-transform: translateX(400px);
+    }
+    50%{
+        -webkit-transform: translate(400px, 300px);
+    }
+    75%{
+        -webkit-transform: translateY(300px);
+    }
+    100%{
+        -webkit-transform: translateX(0);
+    }
+}#box1 {
+     width: 100px; height: 100px; margin-top: 100px; background: pink;
+     -webkit-animation: mycss 5s linear 1s infinite ;
+ }
+@-webkit-keyframes mycss {
+    0%{
+        -webkit-transform: translateX(0);
+    }
+    25%{
+        -webkit-transform: translateX(400px);
+    }
+    50%{
+        -webkit-transform: translate(400px, 300px);
+    }
+    75%{
+        -webkit-transform: translateY(300px);
+    }
+    100%{
+        -webkit-transform: translateX(0);
+    }
+}
+/*1.animation  不需要事件触发   transition 需要事件触发，比如hover
+  2.transition过渡的是属性，比如宽，高，背景，透明度，边框，圆角，边距
+
+
+*/
+

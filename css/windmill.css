@@ -1,0 +1,85 @@
+* {
+    margin: 0; padding: 0; list-style: none;
+}
+#box {
+    width: 100px;
+    height: 100px;
+    /*background: #ccc;*/
+    margin: 20px auto;
+    float: left;
+    position: relative;
+    -webkit-transform: rotate(0);
+    -webkit-transition: all 2s;
+    /*-webkit-animation: mycss 1s linear infinite;*/
+}
+/*}*/
+#box:hover {
+    -webkit-transform: rotate(360deg);
+}
+#box>div {
+    width: 20px;height: 50px;
+    position: absolute; left: 40px;
+    -webkit-transform-origin: center bottom  ;
+}
+#round_top {
+}
+#round_top div {
+    background: red;
+
+}
+
+#round_left{
+    -webkit-transform: rotateZ(180deg);
+}
+#round_left div {
+    background: yellow;
+
+}
+
+#round_right{
+    -webkit-transform: rotateZ(270deg);
+}
+#round_right div {
+    background:pink ;
+
+}
+
+#round_bottom {
+    -webkit-transform: rotateZ(90deg);
+}
+#round_bottom div {
+    background: blueviolet;
+
+}
+/*@-webkit-keyframes mycss {*/
+    /*0%{*/
+        /*-webkit-transform: rotate(0);*/
+    /*}*/
+    /*100%{*/
+        /*-webkit-transform: rotate(360deg);*/
+    /*}*/
+/*}*/
+.round1 {
+    width: 20px; height: 20px; border-radius: 50%;
+}
+.round2{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    opacity: 0.8;
+    margin: 0 auto;
+}
+.round3{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    opacity: 0.6;
+    margin: 0 auto;
+}
+.round4{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    opacity: 0.4;
+    margin: 0 auto;
+}
